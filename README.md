@@ -7,8 +7,8 @@ Para enviar um e-mail, suba o servidor na porta 8080 e faça um `POST` na seguin
 ```json
 {
 	"ownerRef": "Lucas Fellipe",
-	"emailFrom": "lucas.fellipe.c@gmail.com",
-	"emailTo": "lucasfcm9@gmail.com",
+	"emailFrom": "example@gmail.com",
+	"emailTo": "johndoe@example.com",
 	"subject": "Teste",
 	"text": "Hello, Java!"
 }
