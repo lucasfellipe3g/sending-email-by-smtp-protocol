@@ -32,9 +32,8 @@ public class EmailService {
 
       emailModel.setStatusEmail(StatusEmail.SENT);
     } catch (MailException e) {
-      emailModel.setStatusEmail(StatusEmail.SENT);
-    } finally {
-      return emailRepository.save(emailModel);
+      emailModel.setStatusEmail(StatusEmail.ERROR);
     }
+    return emailRepository.save(emailModel);
   }
 }
